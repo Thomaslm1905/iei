@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="About.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="Background">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html"><img width="100px" height="auto" src="img/IMG_4543.PNG"></a>
+              </div>
+              <div class="text-link">
+                <a href="Contactus.html ">Contact us</a>
+              </div>
+              <div class="text-link">
+                <a href="AboutUs.html">About US</a>
+              </div>
+                <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Event&#9660; 
+                </button>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="Event.html">Fashion Festival</a>
+                    <a href="fooddest.html">Food Festival</a>
+                  </div>
+                  </div> 
+                  <div class="text-link">
+                <a href="home.html">Home</a>
+              </div>
+          <br>
+          <p style="text-align: center; font-size: 20px; padding:15px; margin:15px;">WIKA ORGANIZER <br> "Indonesia Event Organizer"</p>
+        </div>
+        <div class="contecthome">
+          <h1 style="text-align: center; margin-top: 200px;">About|Wika Organizer </h1>
+          <p style="text-align: center; margin-left: 15%;margin-right: 15%;">Wika Organizer sebagai full MICE (Meeting, Incentive, Convention & Exhibition) Services yang berpusat di Bandung, Jawa Barat. 
+            Hingga saat ini kami telah menyelenggarakan lebih dari 100 direct sell exhibition baik di Mall maupun di Convention Center yang berada di Bandung dan sekitarnya.
+          </p>
+          <br><br><br><br>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+              <img src="img/Wika Yulinar.jpeg">
+            <div class="desc">Wika Yulinar</div>
+            <div class="jabat">(Chief Executive Officer)</div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+              <img src="img/Wahyu Adi.jpeg" alt="">
+            <div class="desc">Wahyu Adi</div>
+            <div class="jabat">(Chief Operating Officer)</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+              <img src="img/Fitri Fadillah.jpeg">
+              <div class="desc">Fitri Fadillah </div>
+              <div class="jabat">(Marketing Leader)</div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+              <img src="img/Rendi.jpeg" alt="">
+            <div class="desc">Mohammad Rendi Valentino</div>
+            <div class="jabat">(Content Leader)</div>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
+</html>

@@ -1,0 +1,66 @@
+.Background{
+  background-image: url(img/p.jpg);
+  height: 689px;
+  width: 100%;
+  background-size: cover;
+}
+
+
+.text-link:hover {
+  padding-bottom: 10px;
+}
+
+.navbar :hover{
+  padding-top: 5px;
+}
+div.gallery {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: -80px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid transparent;
+  }
+  
+  div.gallery img {
+    border-radius: 80%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  div.jabat {    
+    margin-top: 10px;
+    margin-left: -150px;
+    text-align: center;
+  }
+
+  div.desc {    
+    margin-top: 20px;
+    margin-left: -150px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    margin-left: 10%;
+    padding: 0 6px;
+    float: left;
+    width: 10%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }

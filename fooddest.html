@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="Modal.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html"><img width="100px" height="auto" src="img/IMG_4543.PNG"></a>
+          </div>
+          <div class="text-link">
+            <a href="Contactus.html ">Contact us</a>
+          </div>
+          <div class="text-link">
+            <a href="AboutUs.html">About US</a>
+          </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Event&#9660; 
+            </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="Event.html">Event Festival</a>
+                <a href="fooddest.html">Food Festival</a>
+              </div>
+              </div> 
+              <div class="text-link">
+            <a href="home.html">Home</a>
+          </div>
+      <br>
+      <p style="text-align: center; font-size: 20px; padding:15px; margin:15px;"><br> "FOOD FESTIVAL"</p>
+    </div>
+    <div class="about-section">
+      </div>
+        <!-- isi konten modal (POP UP) -->
+        <div id="overlay" onclick="off()">
+        </div>
+        <div class="modal" id="modal1">
+          <div class="header" id="header">
+            <p>Gousmet Sensation</p>
+            <span id="modal1" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+          </div>
+          <div class="body" id="body"><center>
+            <img src="img/Foodfesrt.jpg"></img></center>
+            <p style="text-align: center;">Sebuah Food Festival yang berada di Plaza Atrium Trans Studio Mall dengan tema Gousmet Sensation</p>
+
+          </div>
+        </div>
+        <div class="modal" id="modal2">
+          <div class="header" id="header">
+            <p>Food Nation</p>
+            <span id="modal2" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+          </div>  
+          <div class="body" id="body">
+            <center><img src="img/Foodfest3.jpg"></img></center>
+            <p style="text-align: center;">Sebuah Food Festival yang berada di Festival Citylink dengan tema Food Nation</p>
+          </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="header" id="header">
+              <p>Fashion Festival</p>
+              <span id="modal2" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+            </div>
+            <div class="body" id="body">
+              <center><img src="img/Foodfest2.jpg"></img></center>
+              <p style="text-align: center;">Sebuah Event Fashion yang berada di Bandung Indah Plaza dengan tema Terrace Of Culinary</p>
+            </div>
+          </div>
+          <div class="modal" id="modal4">
+            <div class="header" id="header">
+              <p>Sweets Christmas</p>
+              <span id="modal4" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+            </div>  
+            <div class="body" id="body">
+              <center><img src="img/Food Christmas.jpeg"></img></center>
+              <p style="text-align: center;">-</p>
+            </div>
+          </div>
+          <div class="modal" id="modal5">
+            <div class="header" id="header">
+              <p>Seuhaaah</p>
+              <span id="modal5" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+            </div>  
+            <div class="body" id="body">
+              <center><img src="img/Food Seuha.jpeg"></img></center>
+              <p style="text-align: center;">-</p>
+            </div>
+          </div>
+          <div class="modal" id="modal6">
+            <div class="header" id="header">
+              <p>Festival Parcel & Kue Lebaran</p>
+              <span id="modal6" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+            </div>  
+            <div class="body" id="body">
+              <center><img src="img/Parcel.jpeg"></img></center>
+              <p style="text-align: center;">-</p>
+            </div>
+          </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="img/Foodfesrt.jpg" alt="Jane" style="width:100%">
+              <div class="container">
+                <h2>Gousmet Sensation </h2>
+                <p class="title">Plaza Atrium Trans Studio Mall Bandung</p>
+                <p>3 May - 7 May 2017</p>
+                <p>WIKA ORGANIZER</p>
+                <p><button id="modal1" class="button" onclick="on(this.id)">Detail</button></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="img/Foodfest3.jpg" alt="Mike" style="width:100%">
+              <div class="container">
+                <h2>Food Nation </h2>
+                <p class="title">Festival Citylink</p>
+                <p>11 May - 14 May 2017.</p>
+                <p>WIKA ORGANIZER</p>
+                <p><button id="modal2" class="button" onclick="on(this.id)">Detail</button></p>
+                </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="img/Foodfest2.jpg" alt="John" style="width:100%;">
+              <div class="container">
+                <h2>Terrace Of Culinary</h2>
+                <p class="title">Bandung Indah Plaza</p>
+                <p>16 September 2017.</p>
+                <p>WIKA ORGANIZER</p>
+                <p><button id="modal3" class="button" onclick="on(this.id)">Detail</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+              <div class="card">
+                <img src="img/Food Christmas.jpeg" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>Sweets Christmas</h2>
+                  <p class="title">At Cihampelas Walk Bandung</p>
+                  <p>22 Dec 2023 - 07 Jan 2024</p>
+                  <p>WIKA ORGANIZER</p>
+                  <p><button id="modal4" class="button" onclick="on(this.id)">Detail</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="img/Food Seuha.jpeg" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>Seuhaaah Festival</h2>
+                  <p class="title">Paris Van Java</p>
+                  <p>- </p>
+                  <p>WIKA ORGANIZER</p>
+                  <p><button id="modal5" class="button" onclick="on(this.id)">Detail</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="img/Parcel.jpeg" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>Festival Parcel & Kue Lebaran</h2>
+                  <p class="title">Union Square Cihampelas Walk</p>
+                  <p>31 Maret - 02 April 2023</p>
+                  <p>WIKA ORGANIZER</p>
+                  <p><button id="modal6" class="button" onclick="on(this.id)">Detail</button></p>
+                </div>
+              </div>
+            </div>
+        </div>
+</body>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    var id_aktif;
+function on(clicked_id) { document.getElementById("overlay").style.display = "block";
+document.getElementById(clicked_id).style.display = "block";
+id_aktif = clicked_id;
+}
+function off() {
+document.getElementById("overlay").style.display = "none";
+document.getElementById(id_aktif).style.display = "none";
+}
+    </script>
+</html>

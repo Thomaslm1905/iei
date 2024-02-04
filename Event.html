@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="Modal.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html"><img width="100px" height="auto" src="img/IMG_4543.PNG"></a>
+          </div>
+          <div class="text-link">
+            <a href="Contactus.html ">Contact us</a>
+          </div>
+          <div class="text-link">
+            <a href="AboutUs.html">About US</a>
+          </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Event&#9660; 
+            </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="Event.html">Event Festival</a>
+                <a href="fooddest.html">FoodFest</a>
+              </div>
+              </div> 
+              <div class="text-link">
+            <a href="home.html">Home</a>
+          </div>
+      <br>
+      <p style="text-align: center; font-size: 20px; padding:15px; margin:15px;">
+    </div>
+    <div class="about-section">
+      </div>
+      <!-- isi konten modal (POP UP) -->
+      <div id="overlay" onclick="off()">
+      </div>
+      <div class="modal" id="modal1">
+        <div class="header" id="header">
+          <p>Pameran Fashion Hijab Batik</p>
+          <span id="modal1" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+        </div>
+        <div class="body" id="body"><center>
+          <img src="img/04.jpg"></img></center>
+          <p>WIKA ORGANIZER Mengadakan sebuah event untuk memperingati hari batik nasional event ini bertujuan 
+            untuk mengigat batik adalah sebuah warisan budaya,Batik adalah Batik adalah kain Indonesia 
+            bergambar yang pembuatannya secara khusus dengan menuliskan atau menerakan malam pada kain itu, 
+            kemudian pengolahannya diproses dengan cara tertentu yang memiliki kekhasan. .</p>
+        </div>
+      </div>
+      <div class="modal" id="modal2">
+        <div class="header" id="header">
+          <p>Fashion Festival</p>
+          <span id="modal2" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+        </div>  
+        <div class="body" id="body">
+          <center><img src="img/Fashion 6.jpg"></img></center>
+          <p style="text-align: center;">Sebuah Event Fashion yang bekerjasama dengan Braga Citywalk dengan tema Braga City Fashion</p>
+        </div>
+      </div>
+      <div class="modal" id="modal3">
+          <div class="header" id="header">
+            <p>Fashion Festival</p>
+            <span id="modal2" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+          </div>
+          <div class="body" id="body">
+            <center><img src="img/Fashion 2.jpg"></img></center>
+            <p style="text-align: center;">Sebuah Event Fashion yang berada di Main Hall Festival Citylink dengan tema Fashion Festival</p>
+          </div>
+        </div>
+        <div class="modal" id="modal4">
+          <div class="header" id="header">
+            <p>Fashion Festival</p>
+            <span id="modal4" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+          </div>  
+          <div class="body" id="body">
+            <center><img src="img/Fashion 3.jpg"></img></center>
+            <p style="text-align: center;">Sebuah Event Fashion yang berada di Festival Citylink dengan tema Fashion On September</p>
+          </div>
+        </div>
+        <div class="modal" id="modal5">
+          <div class="header" id="header">
+            <p>Fashion Festival</p>
+            <span id="modal5" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+          </div>  
+          <div class="body" id="body">
+            <center><img src="img/Fashion 4.jpg"></img></center>
+            <p style="text-align: center;">Sebuah Event Fashion yang berada di Atrium Festival Citylink dengan tema Fashion Festival 2017</p>
+          </div>
+        </div>
+        <div class="modal" id="modal6">
+          <div class="header" id="header">
+            <p>Fashion Festival</p>
+            <span id="modal6" class="close" onclick="off(this.id)"><i class="fas fa-times-circle"></i></span>
+          </div>  
+          <div class="body" id="body">
+            <center><img src="img/Fashion 5.jpg"></img></center>
+            <p style="text-align: center;">Sebuah Event Fashion yang berada di Main Hall Atrium Festival Citylink dengan tema Islamiah Ramadhan Festival</p>
+          </div>
+        </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="img/04.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Pameran Fashion Hijab Batik </h2>
+              <p class="title">Istana Plaza Bandung</p>
+              <p>23 Oktober - 05 November 2017</p>
+              <p>WIKA ORGANIZER</p>
+              <p><button id="modal1" class="button" onclick="on(this.id)">Detail</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="img/Fashion 6.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Braga City Fashion</h2>
+              <p class="title">Braga Citywalk</p>
+              <p>27 March - 9 April 2017.</p>
+              <p>WIKA ORGANIZER</p>
+              <p><button id="modal2" class="button" onclick="on(this.id)">Detail</button></p>
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="img/Fashion 2.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Fashion Festival</h2>
+              <p class="title">Main Hall Citylink</p>
+              <p>2 - 15 October 2017.</p>
+              <p>WIKA ORGANIZER</p>
+              <p><button id="modal3" class="button" onclick="on(this.id)">Detail</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="img/Fashion 3.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Fashion On September</h2>
+                <p class="title">Festival Citylink</p>
+                <p>28 Agustus - 10 September 2017</p>
+                <p>WIKA ORGANIZER</p>
+                <p><button id="modal4" class="button" onclick="on(this.id)">Detail</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="img/Fashion 4.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Fashion Festival</h2>
+                <p class="title">Festival Citylink</p>
+                <p>4 - 16 July 2017 </p>
+                <p>WIKA ORGANIZER</p>
+                <p><button id="modal5" class="button" onclick="on(this.id)">Detail</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="img/Fashion 5.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Islamiah Ramadhan Festival</h2>
+                <p class="title">Main Hall Atrium Festival Citylink</p>
+                <p>22 May - 4 June 2017 & 5 June - 2 July 2017.</p>
+                <p>WIKA ORGANIZER</p>
+                <p><button id="modal6" class="button" onclick="on(this.id)">Detail</button></p>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    var id_aktif;
+function on(clicked_id) { document.getElementById("overlay").style.display = "block";
+document.getElementById(clicked_id).style.display = "block";
+id_aktif = clicked_id;
+}
+function off() {
+document.getElementById("overlay").style.display = "none";
+document.getElementById(id_aktif).style.display = "none";
+}
+    </script>
+</html>
